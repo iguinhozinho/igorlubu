@@ -1,0 +1,49 @@
+#app header {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  align-items: center;
+  column-gap: 64px;
+  padding-top: 24px;
+}
+
+.navegacao {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.navegacao__social {
+  display: flex;
+  align-items: center;
+  column-gap: 24px;
+  margin-left: auto;
+}
+
+.navegacao__social a {
+  opacity: 0.6;
+  transition: all 0.4s;
+}
+
+.navegacao__social a:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+.navegacao__social a {
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 900px) {
+  .navegacao {
+    justify-content: flex-end;
+  }
+
+  .navegacao__social a {
+    opacity: 0.8;
+    width: 24px;
+    height: 24px;
+  }
+}
